@@ -25,21 +25,3 @@ print(f"Nota Mayor: {max(notas)}")
 print(f"Nota Menor: {min(notas)}")
 print(f"Nota Promedio: {sum(notas)/int(len(notas))}")
 print("---------------------------")
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
