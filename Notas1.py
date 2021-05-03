@@ -1,6 +1,6 @@
 ## Reto N° 2
 
-#Ingresar el nombre de un alumno, pedir las notas que va a tener dicho alumno, 
+# Ingresar el nombre de un alumno, pedir las notas que va a tener dicho alumno, 
 # obtener el promedio, la nota mayor y la menor (range(5)--> [0:4] | while )
 
 # import os       ## importado para el clear
@@ -19,14 +19,22 @@ while True:
 
             while True:
                 try:
-                    nota = int(input(f"Ingresa la nota número {i+1}: "))
-                    notas.append(nota)
-                    i +=1
-                    print("--------------------------------")
-                    
-                    if i == 5:
-                        break
-                    
+                    cant = int(input(f"Ingrese cuantas notas va a tener el alumno {nombre}: "))
+                    while True:    
+                        try:
+                            nota = int(input(f"Ingresa la nota número {i+1}: "))
+                            if nota<=20 and nota>=0:
+                                notas.append(nota)
+                                i +=1
+                                print("--------------------------------")
+                            else:
+                                print("La Nota ingresa no está en el rango [0-20]\n")
+                                
+                            if i == cant:
+                                break
+                        except Exception:
+                            print("La nota ingresada es incorrecta\n")
+                    break
                 except Exception:
                     print("El valor ingresado es incorrecto!\n")
             break
