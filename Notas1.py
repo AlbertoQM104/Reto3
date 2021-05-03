@@ -20,21 +20,24 @@ while True:
             while True:
                 try:
                     cant = int(input(f"Ingrese cuantas notas va a tener el alumno {nombre}: "))
-                    while True:    
-                        try:
-                            nota = int(input(f"Ingresa la nota número {i+1}: "))
-                            if nota<=20 and nota>=0:
-                                notas.append(nota)
-                                i +=1
-                                print("--------------------------------")
-                            else:
-                                print("La Nota ingresa no está en el rango [0-20]\n")
-                                
-                            if i == cant:
-                                break
-                        except Exception:
-                            print("La nota ingresada es incorrecta\n")
-                    break
+                    if cant<=15:  
+                        while True:    
+                            try:
+                                nota = int(input(f"Ingresa la nota número {i+1}: "))
+                                if nota<=20 and nota>=0:
+                                    notas.append(nota)
+                                    i +=1
+                                    print("--------------------------------")
+                                else:
+                                    print("La Nota ingresa no está en el rango [0-20]\n")
+                                    
+                                if i == cant:
+                                    break
+                            except Exception:
+                                print("La nota ingresada es incorrecta\n")
+                        break
+                    else:
+                        print("La cantidad de notas es incorrecta! [1-15]\n")
                 except Exception:
                     print("El valor ingresado es incorrecto!\n")
             break
