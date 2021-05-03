@@ -58,27 +58,3 @@ print(f"El Promedio de las notas es: {sum(notas)/len(notas)}")
 print(f"La nota Mayor es: {max(notas)}")
 print(f"La nota Menor es: {min(notas)}")
 print("=================================")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
