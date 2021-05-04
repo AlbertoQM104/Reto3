@@ -82,7 +82,5 @@ for i in range(cant_alum):
         alumno["Nota Maxima"] = min(alumno["Notas"])
         alumno["Nota Minimo"] = max(alumno["Notas"])
 
-
-
 print("============================================================")
 print(alumnos)
